@@ -62,10 +62,10 @@
   letter-spacing: 0.5px;
 }
 .modalContent p {
-  font-family: Ploni;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 26px;
   font-weight: 400;
+  letter-spacing: 0.5px;
   color: #fff;
 }
 .buttonStyle {
