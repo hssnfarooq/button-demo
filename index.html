@@ -22,6 +22,30 @@
       src="https://kit.fontawesome.com/ceca07eeeb.js"
       crossorigin="anonymous"
     ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+
     <link
       rel="apple-touch-icon"
       href="theme-assets/images/ico/apple-icon-120.png"
@@ -197,10 +221,10 @@
     <div id="modalOverlay">
       <div class="modalPopup">
         <div class="modalContent">
-          <h1>Hey there!</h1>
+          <h1>Welcome!</h1>
           <p>
-            by clicking accept you agree to the legal document we present our on
-            our website
+            By clicking accept, you agree to the legal document we present on
+            our website. Please make sure you read & understand
           </p>
           <button class="buttonStyle" id="button">Accept</button>
         </div>
@@ -1236,6 +1260,7 @@
                       font-weight: normal;
                       letter-spacing: 0.125rem;
                       text-transform: uppercase;
+                      padding-bottom: 15px;
                     }
 
                     li {
@@ -1252,13 +1277,27 @@
                     }
                   </style>
                   <h1 id="headline">Countdown to Launch:</h1>
-                  <div id="countdown" style="padding-left: 0">
-                    <ul class="timer" style="padding-left: 0">
-                      <li><span id="days"></span>days</li>
-                      <li><span id="hours"></span>Hours</li>
-                      <li><span id="minutes"></span>Minutes</li>
-                      <li><span id="seconds"></span>Seconds</li>
-                    </ul>
+
+                  <div class="flex-w flex-c-m cd100 p-b-33">
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                      <span class="l2-txt1 p-b-9 days">35</span>
+                      <span class="s2-txt1">Days</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                      <span class="l2-txt1 p-b-9 hours">17</span>
+                      <span class="s2-txt1">Hours</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                      <span class="l2-txt1 p-b-9 minutes">50</span>
+                      <span class="s2-txt1">Minutes</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                      <span class="l2-txt1 p-b-9 seconds">39</span>
+                      <span class="s2-txt1">Seconds</span>
+                    </div>
                   </div>
                   <script>
                     (function () {
@@ -2418,6 +2457,42 @@
     <!-- <script src="theme-assets/js/sales-notification.js"></script> -->
     <!-- END CRYPTO JS-->
     <!-- BEGIN PAGE LEVEL JS-->
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/moment.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script>
+      $('.cd100').countdown100({
+        /*Set Endtime here*/
+        /*Endtime must be > current time*/
+        endtimeYear: 0,
+        endtimeMonth: 0,
+        endtimeDate: 35,
+        endtimeHours: 18,
+        endtimeMinutes: 0,
+        endtimeSeconds: 0,
+        timeZone: '',
+        // ex:  timeZone: "America/New_York"
+        //go to " http://momentjs.com/timezone/ " to get timezone
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+      $('.js-tilt').tilt({
+        scale: 1.1,
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="./assets/js/main.js"></script>
     <!-- END PAGE LEVEL JS-->
     <script>
       window.onload = function () {
