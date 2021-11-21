@@ -4689,7 +4689,7 @@ header .navbar.navbar-fixed .dropdown a:hover {
     background-size: 80%;
   }
   .head-area .head-content .banner-wrapper {
-    margin-top: -4rem;
+    /* margin-top: -4rem; */
   }
   .intro-video-bg-ripples {
     margin-left: -15vh;
@@ -4703,7 +4703,7 @@ header .navbar.navbar-fixed .dropdown a:hover {
     background-size: 90%;
   }
   .head-area .head-content .banner-wrapper {
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
   }
   .head-area .head-content .banner-wrapper h3 {
     margin-top: 1.375rem;
@@ -4725,7 +4725,7 @@ header .navbar.navbar-fixed .dropdown a:hover {
     background-size: 95%;
   }
   .head-area .head-content .banner-wrapper {
-    margin-top: -6rem;
+    /* margin-top: -6rem; */
   }
   .head-area .head-content .banner-content {
     padding-top: 0.5rem;
