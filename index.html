@@ -170,7 +170,7 @@
     <style>
       #chartdiv {
         width: 100%;
-        height: 200px;
+        height: 400px;
       }
     </style>
 
@@ -1703,23 +1703,25 @@
                 </div>
                 <div class="row">
                   <div
-                    class="col-md-12 col-lg-6 col-xl-6 animated"
+                    class="col-md-12 col-lg-12 col-xl-6 animated"
                     data-animation="fadeInLeftShorter"
                     data-animation-delay="0.6s"
                   >
-                    <div class="token-img">
-                      <img
+                    <!-- <div class="token-img"> -->
+                    <!-- <img
                         class="img-fluid"
                         src="./gicks-chart.png"
                         style="width: 100%; height: 100%; margin: 0 auto"
                         alt="token-distribution"
-                      />
+                      /> -->
+
+                    <div class="chart-size">
+                      <div id="chartdiv"></div>
                     </div>
-                    <!-- 
-                    <div id="chartdiv"></div> -->
+                    <!-- </div> -->
                   </div>
                   <div
-                    class="col-md-12 col-lg-6 col-xl-5 offset-xl-1 animated"
+                    class="col-md-12 col-lg-12 col-xl-5 offset-xl-1 animated"
                     data-animation="fadeInRightShorter"
                     data-animation-delay="0.6s"
                   >
@@ -2535,10 +2537,10 @@
       $('.cd100').countdown100({
         /*Set Endtime here*/
         /*Endtime must be > current time*/
-        endtimeYear: 0,
-        endtimeMonth: 0,
-        endtimeDate: 10,
-        endtimeHours: 12,
+        endtimeYear: 2021,
+        endtimeMonth: 12,
+        endtimeDate: 17,
+        endtimeHours: 21,
         endtimeMinutes: 0,
         endtimeSeconds: 0,
         timeZone: '',
