@@ -110,8 +110,10 @@ p {margin: .75em 0 1.5em;}
 /* Pop-UP-Close */
 
 .right-sec-image img {
+  display: block;
   width: 85%;
-  padding-left: 15px;
+  margin: 0 auto;
+  
 }
 
 .h1-text {
