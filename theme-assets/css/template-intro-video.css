@@ -2984,10 +2984,10 @@ header .navbar.navbar-shadow {
 }
 
 .whitepaper .whitepaper-languages img {
-  border: 8px solid white;
+  /* border: 8px solid white;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 20px 0 rgba(103, 103, 103, 0.5);
-  box-shadow: 0 0 20px 0 rgba(103, 103, 103, 0.5);
+  box-shadow: 0 0 20px 0 rgba(103, 103, 103, 0.5); */
 }
 
 .whitepaper .whitepaper-languages .lang-text {
@@ -3029,8 +3029,8 @@ header .navbar.navbar-shadow {
   padding: 15px 0 0;
   color: white;
   border-radius: 6px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
-  box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
+  /* -webkit-box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3); */
 }
 .roadmap .swiper-slide.active .roadmap-info:after {
   content: '';
