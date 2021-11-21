@@ -193,6 +193,19 @@
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
     </div>
+
+    <div id="modalOverlay">
+      <div class="modalPopup">
+        <div class="modalContent">
+          <h1>Hey there!</h1>
+          <p>
+            by clicking accept you agree to the legal document we present our on
+            our website
+          </p>
+          <button class="buttonStyle" id="button">Accept</button>
+        </div>
+      </div>
+    </div>
     <!--/ Preloader -->
     <!-- <nav class="vertical-social">
 <ul>
@@ -391,7 +404,7 @@
                             target="_blank"
                             class="
                               btn btn-lg btn-round btn-light-off
-                              ml-4
+                              ml-2
                               animated
                             "
                             data-animation="fadeInUpShorter"
@@ -2406,5 +2419,12 @@
     <!-- END CRYPTO JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <!-- END PAGE LEVEL JS-->
+    <script>
+      window.onload = function () {
+        document.getElementById('button').onclick = function () {
+          document.getElementById('modalOverlay').style.display = 'none';
+        };
+      };
+    </script>
   </body>
 </html>
