@@ -56,14 +56,14 @@
 
 .modalContent > h1 {
   font-family: Ploni;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 700;
   display: block;
   letter-spacing: 0.5px;
 }
 .modalContent p {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #fff;
@@ -82,13 +82,14 @@
   cursor: pointer;
 }
 
-.chart-size {
-  width: 100%;
-  height: 100%;
-}
-
 .buttonStyle:hover {
   opacity: 1 !important;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pop-UP-Close */
@@ -129,13 +130,95 @@
   padding-left: 5px;
 }
 
-.btn-black {
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  padding: 18px 40px !important;
+  width: 100% !important;
+  border-radius: 50%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.button--mimas:hover {
+  opacity: 1 !important;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--mimas {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  padding: 18px 40px !important;
+  line-height: 18px;
+  border: 0;
+  border-radius: 30px;
+  overflow: hidden;
+  color: #fff;
+  background: #e7e7e7;
+}
+
+.button--mimas span {
+  font-size: 17px;
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.button--mimas span > i {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.button--mimas::before {
+  content: '';
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button--mimas:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+/* .btn-black {
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
   background-color: #000;
   color: #fff !important;
   font-weight: 700;
   padding: 18px 40px !important;
   width: 100% !important;
+  position: relative;
+}
+
+.btn-black::before {
+  content: '';
+  background: #000;
+  width: 120% !important;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-black:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 
 .btn-black > span {
@@ -148,7 +231,7 @@
 
 .btn-black:hover {
   color: #fff;
-}
+} */
 
 .icon-image {
   width: 50px;
@@ -331,11 +414,11 @@
   }
 
   .btn-credit-mbl {
-    padding: 25px 0;
+    margin: 25px 0;
     display: block;
   }
 
-  .btn-credit-mbl > a {
+  /* .btn-credit-mbl > a {
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     width: 100%;
@@ -352,7 +435,7 @@
     padding-left: 8px;
     font-size: 25px;
     line-height: 25px;
-  }
+  } */
 
   .mobile-ver-progress {
     display: block;
@@ -394,9 +477,17 @@
   .pre-sale-text {
     font-size: 18px;
   }
+
+  .chart-container {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
+  .doc {
+    padding: 40px 0px;
+  }
+
   .banner-wrapper {
     margin-top: 50px;
   }
@@ -511,7 +602,10 @@
   }
 
   .progress-container .progress-wrapper > span {
+    vertical-align: middle;
     font-size: 13px;
+    padding-top: 2px;
+    line-height: 13px;
   }
 
   .progress-wrapper {
@@ -521,7 +615,7 @@
 
   .progress-bar-val {
     font-size: 13px;
-    line-height: 25px;
+    line-height: 30px;
     height: 25px;
   }
 

@@ -116,63 +116,8 @@
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-93ZCQVQ88T"
-    ></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
-    <script>
-      am5.ready(function () {
-        // Create root element
-        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-        var root = am5.Root.new('chartdiv');
-
-        // Set themes
-        // https://www.amcharts.com/docs/v5/concepts/themes/
-        root.setThemes([am5themes_Animated.new(root)]);
-
-        // Create chart
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-        var chart = root.container.children.push(
-          am5percent.PieChart.new(root, {
-            layout: root.verticalLayout,
-          })
-        );
-
-        // Create series
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-        var series = chart.series.push(
-          am5percent.PieSeries.new(root, {
-            valueField: 'value',
-            categoryField: 'category',
-          })
-        );
-
-        // Set data
-        // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-        series.data.setAll([
-          { value: 29.5, category: 'Public' },
-          { value: 3.5, category: 'Development' },
-          { value: 3.5, category: 'Marketing' },
-          { value: 12.5, category: 'Presale' },
-          { value: 1, category: 'Staff' },
-        ]);
-
-        // Play initial series animation
-        // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
-        series.appear(1000, 100);
-      }); // end am5.ready()
-    </script>
-    <style>
-      #chartdiv {
-        width: 100%;
-        height: 400px;
-      }
-    </style>
 
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -277,7 +222,8 @@
           <h1>Welcome!</h1>
           <p>
             By clicking accept, you agree to the legal document we present on
-            our website. Please make sure you read & understand
+            our website. Please make sure you read & understand them before
+            making any investment.
           </p>
           <button class="buttonStyle" id="button">Accept</button>
         </div>
@@ -471,16 +417,27 @@
 
                         <!-- <h3 class="d-block animated" data-animation="fadeInUpShorter" data-animation-delay="1.6s">First decentralized marketing platform that allows <br class="d-none d-xl-block">merchants and affiliates.</h3> -->
                         <div class="hero-buttons">
-                          <a
+                          <!-- <a
                             onclick="window.location.href='https://buy.stripe.com/aEU16302cf3w2A0004'"
                             target="_blank"
                             class="btn btn-lg btn-round btn-black animated"
                             data-animation="fadeInUpShorter"
                             data-animation-delay="1.7s"
                             >Buy with Credit Card
+                            <span><i class="far fa-credit-card"></i></span
+                          ></a> -->
+
+                          <button
+                            onclick="window.location.href='https://buy.stripe.com/aEU16302cf3w2A0004'"
+                            class="button button--mimas animated"
+                            data-animation="fadeInUpShorter"
+                            data-animation-delay="1.7s"
+                          >
                             <span
-                              ><i class="fas fa-long-arrow-alt-right"></i></span
-                          ></a>
+                              >Buy with Credit Card
+                              <i class="far fa-credit-card"></i
+                            ></span>
+                          </button>
                           <!-- <a
                             href="#"
                             target="_blank"
@@ -524,12 +481,17 @@
                           data-animation="fadeInUpShorter"
                           data-animation-delay="1.5s"
                         >
-                          <a
+                          <button
                             onclick="window.location.href='https://buy.stripe.com/aEU16302cf3w2A0004'"
-                            >Buy with Credit Card
+                            class="button button--mimas animated"
+                            data-animation="fadeInUpShorter"
+                            data-animation-delay="1.7s"
+                          >
                             <span
-                              ><i class="fas fa-long-arrow-alt-right"></i></span
-                          ></a>
+                              >Buy with Credit Card
+                              <i class="far fa-credit-card"></i
+                            ></span>
+                          </button>
                         </div>
 
                         <div
@@ -1197,13 +1159,13 @@
                   <div class="whitepaper-languages">
                     <div class="row">
                       <div
-                        class="col-12 col-md-4 text-center mt-4 animated"
+                        class="col-12 col-md-4 text-center mt-4 animated doc"
                         data-animation="fadeInUpShorter"
                         data-animation-delay="0.6s"
                       >
                         <a
                           target="_blank"
-                          href="./white-paper.pdf"
+                          href="./white---paper.pdf"
                           title="Whitepaper"
                         >
                           <img
@@ -1218,7 +1180,7 @@
                         </a>
                       </div>
                       <div
-                        class="col-12 col-md-4 text-center mt-4 animated"
+                        class="col-12 col-md-4 text-center mt-4 animated doc"
                         data-animation="fadeInUpShorter"
                         data-animation-delay="0.7s"
                       >
@@ -1240,13 +1202,13 @@
                         </a>
                       </div>
                       <div
-                        class="col-12 col-md-4 text-center mt-4 animated"
+                        class="col-12 col-md-4 text-center mt-4 animated doc"
                         data-animation="fadeInUpShorter"
                         data-animation-delay="0.8s"
                       >
                         <a
                           target="_blank"
-                          href="./white-paper.pdf"
+                          href="./Legal clarification.pdf"
                           title="Legal Ducument"
                         >
                           <img
@@ -1322,19 +1284,6 @@
                       text-transform: uppercase;
                       padding-bottom: 15px;
                     }
-
-                    li {
-                      display: inline-block;
-                      font-size: 9px;
-                      list-style-type: none;
-                      padding: 1em;
-                      text-transform: uppercase;
-                    }
-
-                    li span {
-                      display: block;
-                      font-size: 26px;
-                    }
                   </style>
                   <h1 id="headline">Countdown to Launch:</h1>
 
@@ -1359,7 +1308,7 @@
                       <span class="s2-txt1">Seconds</span>
                     </div>
                   </div>
-                  <script>
+                  <!-- <script>
                     (function () {
                       const second = 1000,
                         minute = second * 60,
@@ -1409,7 +1358,7 @@
                           //seconds
                         }, 0);
                     })();
-                  </script>
+                  </script> -->
                 </div>
                 <div class="row align-items-center">
                   <!-- <div class="col-md-12 col-lg-6 col-xl-5 animated" data-animation="fadeInLeftShorter" data-animation-delay="0.6s">
@@ -1703,7 +1652,7 @@
                 </div>
                 <div class="row">
                   <div
-                    class="col-md-12 col-lg-12 col-xl-6 animated"
+                    class="col-md-12 col-lg-6 col-xl-6 animated"
                     data-animation="fadeInLeftShorter"
                     data-animation-delay="0.6s"
                   >
@@ -1715,13 +1664,13 @@
                         alt="token-distribution"
                       /> -->
 
-                    <div class="chart-size">
-                      <div id="chartdiv"></div>
+                    <div class="chart-container">
+                      <div id="chart"></div>
                     </div>
                     <!-- </div> -->
                   </div>
                   <div
-                    class="col-md-12 col-lg-12 col-xl-5 offset-xl-1 animated"
+                    class="col-md-12 col-lg-6 col-xl-5 offset-xl-1 animated"
                     data-animation="fadeInRightShorter"
                     data-animation-delay="0.6s"
                   >
@@ -2565,5 +2514,35 @@
         };
       };
     </script>
+
+    <script>
+      var options = {
+        series: [59, 5, 22, 7, 7],
+        chart: {
+          width: 480,
+          type: 'pie',
+        },
+        labels: ['Public', 'Staff', 'Presale', 'Marketing', 'Development'],
+        responsive: [
+          {
+            breakpoint: 520,
+
+            options: {
+              chart: {
+                width: 350,
+              },
+              legend: {
+                position: 'bottom',
+              },
+            },
+          },
+        ],
+      };
+
+      var chart = new ApexCharts(document.querySelector('#chart'), options);
+      chart.render();
+    </script>
+
+    <!-- config/setup -->
   </body>
 </html>
